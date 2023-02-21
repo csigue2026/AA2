@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>WORDSCAPES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body{
+      background-image: url(waves.jpg);
+      background-size: cover;
+
+    }
+        #h3 {
+        width: 300px;
+        border: 1px solid black;
+        
+    }
+    td {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: 1px;
+    }
+    tr {
+     height: 40px;
+     width: 30px;
+    }
+    .wordboard {
+     width: 300px;
+     margin: auto;
+    }
+    .lettext {
+     width: 30%;
+     margin: auto;
+    }
+    .keys {
+        width: 50px;
+        text-align: center;
+    }
+    .word{ 
+      color: rgb(0, 0, 0, 0);
+    }
+    #bar{
+    }
+</style>
+            <script>
+                var x = 0;
+                var uncle = 0;
+                var sun = 0;
+                var lens = 0;
+                var use = 0;
+                var nucleus = 0;
+                var cue = 0;
+                var clue = 0;
+                var sue = 0;
+                var Bonus = 0;
+               function Delete(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("One").disabled = false;
+                document.getElementById("Two").disabled = false;
+                document.getElementById("Thr").disabled = false;
+                document.getElementById("Fou").disabled = false;
+                document.getElementById("Fiv").disabled = false;
+                document.getElementById("Six").disabled = false;
+                document.getElementById("Sev").disabled = false;
+                document.getElementById("bar").innerHTML = "&nbsp;";
+               }
+               function Enter(){
+                let  text = document.getElementById("bar").innerHTML;
+                document.getElementById("One").disabled = false;
+                document.getElementById("Two").disabled = false;
+                document.getElementById("Thr").disabled = false;
+                document.getElementById("Fou").disabled = false;
+                document.getElementById("Fiv").disabled = false;
+                document.getElementById("Six").disabled = false;
+                document.getElementById("Sev").disabled = false;
+
+                if(text == "SUN&nbsp;" && sun == 0){
+                    x++;
+                    sun++;
+                    document.getElementById("Sun").style.color = "black";
+                    document.getElementById("sUn").style.color = "black";
+                    document.getElementById("suN").style.color = "black";
+                }
+                else if(text == "USE&nbsp;" && use == 0){
+                    x++;
+                    use++;
+                    document.getElementById("Use").style.color = "black";
+                    document.getElementById("uSe").style.color = "black";
+                    document.getElementById("usE").style.color = "black";
+                }
+                else if(text == "CUE&nbsp;" && cue == 0){
+                    x++;
+                    cue++;
+                    document.getElementById("unCle").style.color = "black";
+                    document.getElementById("cUe").style.color = "black";
+                    document.getElementById("lEns").style.color = "black";
+                }
+                else if(text == "UNCLE&nbsp;" && uncle == 0){
+                    x++;
+                    uncle++;
+                    document.getElementById("Uncle").style.color = "black";
+                    document.getElementById("uNcle").style.color = "black";
+                    document.getElementById("unCle").style.color = "black";
+                    document.getElementById("uncLe").style.color = "black";
+                    document.getElementById("nuclEus").style.color = "black";
+                    console.log(uncle)
+                }
+                else if(text == "NUCLEUS&nbsp;" && nucleus == 0){
+                    x++;
+                    nucleus++;
+                    document.getElementById("suN").style.color = "black";
+                    document.getElementById("nUcleus").style.color = "black";
+                    document.getElementById("nuCleus").style.color = "black";
+                    document.getElementById("nucLeus").style.color = "black";
+                    document.getElementById("nuclEus").style.color = "black";
+                    document.getElementById("nucleUs").style.color = "black";
+                    document.getElementById("lenS").style.color = "black";
+                }
+                else if(text == "LENS&nbsp;" && lens == 0){
+                    x++;
+                    lens++;
+                    document.getElementById("lenS").style.color = "black";
+                    document.getElementById("leNs").style.color = "black";
+                    document.getElementById("lEns").style.color = "black";
+                    document.getElementById("Lens").style.color = "black";
+                }
+                else if(text == "CLUE&nbsp;" && clue == 0){
+                    x++;
+                    clue++;
+                    document.getElementById("Clue").style.color = "black";
+                    document.getElementById("cLue").style.color = "black";
+                    document.getElementById("Uncle").style.color = "black";
+                    document.getElementById("usE").style.color = "black";
+                }
+                else if(text == "SUE&nbsp;" && sue == 0){
+                    x++;
+                    sue++;
+                    document.getElementById("Sun").style.color = "black";
+                    document.getElementById("sUe").style.color = "black";
+                    document.getElementById("suE").style.color = "black";
+                }
+                else{
+
+                }
+                document.getElementById("bar").innerHTML = "&nbsp;";
+               }
+               function Ltrone(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","C&nbsp;");
+                 document.getElementById("One").disabled = true;
+
+               }
+               function Ltrtwo(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","E&nbsp;");
+                 document.getElementById("Two").disabled = true;
+               }
+               function Ltrthr(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","N&nbsp;");
+                 document.getElementById("Thr").disabled = true;
+               }
+               function Ltrfou(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","U&nbsp;");
+                 document.getElementById("Fou").disabled = true;
+               }
+               function Ltrfiv(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","S&nbsp;");
+                 document.getElementById("Fiv").disabled = true;
+               }
+               function Ltrsix(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","L&nbsp;");
+                 document.getElementById("Six").disabled = true;
+               }
+               function Ltrsev(){
+                let text = document.getElementById("bar").innerHTML;
+                document.getElementById("bar").innerHTML =
+                 text.replace("&nbsp;","U&nbsp;");
+                 document.getElementById("Sev").disabled = true;
+               }
+</script>
+  </head>
+<body>
+    <div class="container-fluid mt-5"> 
+      <table class="table table-bordered-dark wordboard" id="item">
+        <tr id="item1">
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="table-info  word textword" id="Sun">S</td>
+          <td class="table-info  word textword" id="sUn">U</td>
+          <td class="table-info  word textword" id="suN">N</td>
+        </tr>
+        <tr id="item2">
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="table-info  word textword" id="sUe">U</td>
+            <td class="cross"></td>
+            <td class="table-info  word textword" id="nUcleus">U</td>
+        </tr>
+        <tr id="item3">
+        <td class="cross"></td>
+        <td class="cross"></td>
+        <td class="cross"></td>
+        <td      class="table-info  word textword" id="Clue">C</td>
+        <td class="cross"></td>
+        <td      class="table-info  word textword" id="suE">E</td>
+        <td class="cross"></td>
+        <td      class="table-info  word textword" id="nuCleus">C</td>
+        </tr>
+          <tr id="item4">
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td      class="table-info  word textword" id="cLue">L</td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td      class="table-info  word textword" id="nucLeus">L</td>
+          </tr>
+          <tr id="item5">
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td      class="table-info  word textword" id="Uncle">U</td>
+            <td      class="table-info  word textword" id="uNcle">N</td>
+            <td      class="table-info  word textword" id="unCle">C</td>
+            <td      class="table-info  word textword" id="uncLe">L</td>
+            <td      class="table-info  word textword" id="nuclEus">E</td>
+            </tr>
+          <tr id="item6">
+            <td class="cross"></td>
+            <td      class="table-info  word textword" id="Use">U</td>
+            <td      class="table-info  word textword" id="uSe">S</td>
+            <td      class="table-info  word textword" id="usE">E</td>
+            <td class="cross"></td>
+            <td      class="table-info  word textword" id="cUe">U</td>
+            <td class="cross"></td>
+            <td      class="table-info  word textword"  id="nucleUs">U</td>
+          </tr>
+          <tr id="item7">
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td      class="table-info  word textword" id="Lens" >L</td>
+            <td      class="table-info  word textword" id="lEns">E</td>
+            <td      class="table-info  word" id="leNs" >N</td>
+            <td      class="table-info  word textword" id="lenS">S</td>
+          </tr>
+      </table>
+    <div class="lettext mt-5">
+        <div class="input-group mb-3">
+          <div id="h3"><h3 id="bar">&nbsp;</h3></div>
+          <button class="btn btn-success" type="button" id="Ent" onclick="Enter()">Check</button>
+        </div>
+        <div class="rounded-circle circle">
+          <div class="btn-toolbar btn-group" role="toolbar" aria-label="Letters">
+            <div class="btn mb-3" role="group" aria-label="Letters">
+              <button type="button" class="btn btn-primary keys" id="One" onclick="Ltrone()">C</button>
+              <button type="button" class="btn btn-primary keys" id="Two" onclick="Ltrtwo()">E</button>
+              <button type="button" class="btn btn-primary keys" id="Thr" onclick="Ltrthr()">N</button>
+              <button type="button" class="btn btn-primary keys" id="Fou" onclick="Ltrfou()">U</button>
+            </div>
+            <div class="btn mb-3 mx-5" role="group" aria-label="Letters">
+              <button type="button" class="btn btn-primary keys" id="Fiv" onclick="Ltrfiv()">S</button>
+              <button type="button" class="btn btn-primary keys" id="Six" onclick="Ltrsix()">L</button>
+              <button type="button" class="btn btn-primary keys" id="Sev" onclick="Ltrsev()">U</button>
+              <button type="button" class="btn btn-outline-danger keys" id="Del" onclick="Delete()">❌</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
